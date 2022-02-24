@@ -1,1 +1,15 @@
-<p>news-listing works!</p>
+<div class="news-listing">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 mt-4" *ngFor="let item of listing">
+                <div class="card" style="width: 18rem;" routerLink="/news/news-detail">
+                    <img class="card-img-top" src="{{item.image}}">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.title}}<span>45 mins ago..</span></h5>
+                      <p class="card-text">{{item.description}}</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
